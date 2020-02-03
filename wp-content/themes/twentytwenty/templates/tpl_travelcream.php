@@ -49,7 +49,7 @@
                 </div>
             </div>
             <div id="form_wrapper">
-                <form action="#" method="post">
+                <form method="post" onsubmit="event.preventDefault(); return sendedData(this)";>
                     <input type="text" name="from" placeholder="Where are you leaving from?">
                     <input type="text" name="to" placeholder="Where do you whant to go?">
                     <input placeholder="Date" type="text" name="date" onfocus="(this.type='date')">
@@ -376,5 +376,6 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
